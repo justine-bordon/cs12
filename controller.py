@@ -22,7 +22,7 @@ class GameController:
                 model.shoot()
         else:
             if not model.game_over:
-                model.round_start(view.input_leftclick())
+                model.round_start(view.input_rightclick())
 
         model.update()
 
