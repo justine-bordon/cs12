@@ -30,6 +30,7 @@ class GameView:
 
     def cursor_pos(self) -> tuple[int, int]: return pyxel.mouse_x, pyxel.mouse_y
     def input_leftclick(self) -> bool: return True if pyxel.btnp(pyxel.MOUSE_BUTTON_LEFT, 1, 1) else False
+    def input_rightclick(self) -> bool: return True if pyxel.btnp(pyxel.MOUSE_BUTTON_RIGHT) else False
     def input_space(self) -> bool: return True if pyxel.btnp(pyxel.KEY_SPACE) else False
     def input_wasd(self) -> Direction | None:
         if pyxel.btnp(pyxel.KEY_W):
